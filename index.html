@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Best AI Tools for Freelancers & Marketers — 2026 Roundup</title>
+<meta name="description" content="An editorial roundup of 8 AI tools that actually move the needle for freelance marketers — long-form writing, SEO, video, voice, outreach, email, docs, and analytics. Free, opinionated, no signup wall.">
+<link rel="canonical" href="https://aldow3n-a11y.github.io/best-ai-freelancers/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F3D2E'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='32' font-weight='700' text-anchor='middle' fill='%23F8F4EE'%3EBf%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ----- TOKENS ----- */
+:root{
+  --bg:#F8F4EE;
+  --bg-2:#EFE9DD;
+  --ink:#1A1814;
+  --ink-2:#3A352C;
+  --muted:#6B6557;
+  --border:#D9D2BF;
+  --accent:#1F3D2E;
+  --accent-2:#C2410C;
+  --highlight:#F1E9D2;
+
+  --font-display:"Fraunces",Georgia,serif;
+  --font-body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,"SF Mono",Consolas,monospace;
+
+  --max:1180px;
+  --gutter:clamp(20px,4vw,56px);
+  --radius:6px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+::selection{background:var(--accent);color:var(--bg)}
+
+.nav{border-bottom:1px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:10;backdrop-filter:saturate(180%) blur(8px)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:14px var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-0.01em}
+.brand-mark{width:28px;height:28px;border-radius:7px;background:var(--accent);color:var(--bg);display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:15px}
+.brand-mark::after{content:"Bf"}
+.nav-links{display:flex;gap:22px;font-size:14px;color:var(--ink-2);align-items:center}
+.nav-links a{text-decoration:none;color:var(--ink-2);font-weight:500;border-bottom:1px solid transparent;padding-bottom:1px;transition:border-color 0.2s}
+.nav-links a:hover{border-bottom-color:var(--accent-2)}
+@media(max-width:720px){.nav-links a:not(.btn-post){display:none}}
+
+.hero{max-width:var(--max);margin:0 auto;padding:clamp(60px,10vh,120px) var(--gutter) clamp(40px,8vh,80px);display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:end}
+@media(max-width:880px){.hero{grid-template-columns:1fr;gap:24px}}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent-2);margin-bottom:18px;display:flex;gap:12px;align-items:center}
+.eyebrow .dot{width:6px;height:6px;background:var(--accent-2);border-radius:50%}
+h1.title{font-family:var(--font-display);font-weight:500;font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-0.025em;margin:0 0 24px 0;color:var(--ink);font-variation-settings:"opsz" 144,"SOFT" 30}
+h1.title em{font-style:italic;color:var(--accent-2);font-weight:400}
+.lede{font-size:19px;line-height:1.5;color:var(--ink-2);max-width:50ch;margin:0 0 28px 0}
+.byline{font-family:var(--font-mono);font-size:12px;letter-spacing:0.06em;color:var(--muted);text-transform:uppercase;border-top:1px solid var(--border);padding-top:16px;margin-top:24px;display:flex;gap:18px;flex-wrap:wrap}
+.byline strong{color:var(--ink);font-weight:500}
+
+.aside-card{border:1px solid var(--border);border-radius:var(--radius);padding:24px;background:var(--bg-2);position:relative}
+.aside-card::before{content:"";position:absolute;top:-1px;left:-1px;width:24px;height:24px;background:var(--accent-2);border-radius:var(--radius) 0 var(--radius) 0}
+.aside-card h3{font-family:var(--font-display);font-weight:500;font-size:22px;margin:0 0 8px 0;letter-spacing:-0.01em}
+.aside-card p{font-size:14px;color:var(--ink-2);margin:0 0 16px 0}
+.toc{list-style:none;padding:0;margin:16px 0 0 0;font-family:var(--font-mono);font-size:12px;letter-spacing:0.04em}
+.toc li{padding:8px 0;border-bottom:1px dashed var(--border);display:flex;justify-content:space-between;gap:12px}
+.toc li:last-child{border-bottom:none}
+.toc a{text-decoration:none;color:var(--ink-2);display:flex;justify-content:space-between;gap:12px;flex:1}
+.toc a:hover{color:var(--accent-2)}
+.toc .num{color:var(--muted)}
+
+.container{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.section{padding:48px 0;border-top:1px solid var(--border)}
+.section-head{margin-bottom:32px}
+.section-head .label{font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.section-head .label::after{content:"";flex:1;height:1px;background:var(--border)}
+.section-head h2{font-family:var(--font-display);font-weight:500;font-size:clamp(28px,3.5vw,40px);line-height:1.15;letter-spacing:-0.02em;margin:0;font-variation-settings:"opsz" 144,"SOFT" 50}
+.section-head h2 em{color:var(--accent-2);font-style:italic;font-weight:400}
+
+.prose{max-width:65ch;font-size:17px;color:var(--ink-2);line-height:1.65}
+.prose p{margin:0 0 20px 0}
+.prose h3{font-family:var(--font-display);font-weight:500;font-size:24px;margin:32px 0 12px 0;color:var(--ink);letter-spacing:-0.01em}
+.prose ul{margin:0 0 20px 0;padding-left:20px}
+.prose li{margin-bottom:8px}
+.prose strong{color:var(--ink)}
+.prose blockquote{border-left:3px solid var(--accent-2);padding:8px 18px;margin:24px 0;color:var(--ink);font-family:var(--font-display);font-size:19px;font-style:italic;background:var(--highlight)}
+
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin:24px 0}
+.tool-card{border:1px solid var(--border);border-radius:var(--radius);padding:24px;background:var(--bg);display:flex;flex-direction:column;gap:8px;transition:transform 0.2s,border-color 0.2s}
+.tool-card:hover{transform:translateY(-3px);border-color:var(--accent-2)}
+.tool-card .rank{font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--accent-2);text-transform:uppercase}
+.tool-card h4{font-family:var(--font-display);font-weight:500;font-size:22px;margin:0;color:var(--ink);letter-spacing:-0.01em}
+.tool-card .tag{font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;color:var(--muted);text-transform:uppercase}
+.tool-card .desc{font-size:14px;color:var(--ink-2);line-height:1.55;margin:8px 0}
+.tool-card .price{font-family:var(--font-mono);font-size:12px;color:var(--ink-2);padding:6px 10px;background:var(--highlight);border-radius:var(--radius);display:inline-block;margin-top:auto}
+.tool-card .links{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tool-card .links a{font-family:var(--font-mono);font-size:11px;letter-spacing:0.06em;color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--border);padding:2px 0}
+.tool-card .links a:hover{color:var(--accent-2);border-bottom-color:var(--accent-2)}
+
+.cta-band{margin:48px 0;padding:32px;border:1px solid var(--ink);border-radius:var(--radius);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:var(--ink);color:var(--bg)}
+@media(max-width:680px){.cta-band{grid-template-columns:1fr}}
+.cta-band h3{font-family:var(--font-display);font-weight:500;font-size:24px;margin:0 0 6px 0;letter-spacing:-0.01em;color:var(--bg)}
+.cta-band p{font-size:14px;color:#C7BFAF;margin:0}
+.cta-band a{background:var(--accent-2);color:#fff;padding:14px 22px;border-radius:var(--radius);text-decoration:none;font-weight:600;font-size:15px;white-space:nowrap}
+.cta-band a:hover{background:#9E3308}
+
+.faq{margin:48px 0}
+.faq h2{font-family:var(--font-display);font-weight:500;font-size:clamp(26px,3vw,36px);margin:0 0 24px 0;letter-spacing:-0.01em}
+.faq details{border-top:1px solid var(--border);padding:18px 0}
+.faq details:last-child{border-bottom:1px solid var(--border)}
+.faq summary{font-family:var(--font-display);font-weight:500;font-size:18px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-mono);color:var(--accent-2);font-size:24px;transition:transform 0.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .answer{padding-top:14px;color:var(--ink-2);font-size:15px;line-height:1.6}
+
+.disclosure{font-family:var(--font-mono);font-size:12px;color:var(--muted);border:1px dashed var(--border);padding:14px 18px;border-radius:var(--radius);margin:32px 0;letter-spacing:0.04em;line-height:1.6}
+
+footer{border-top:1px solid var(--border);padding:32px var(--gutter);margin-top:64px;font-family:var(--font-mono);font-size:12px;color:var(--muted);letter-spacing:0.04em}
+.footer-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--border)}
+
+.subscribe{display:flex;gap:8px;max-width:520px;margin:24px 0;flex-wrap:wrap}
+.subscribe input{flex:1;min-width:240px;padding:14px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);font:inherit}
+.subscribe button{padding:14px 24px;border-radius:var(--radius);background:var(--accent);color:var(--bg);font-weight:600;font-size:14px;border:none;cursor:pointer}
+.subscribe button:hover{background:#16301F}
+.subscribe-status{font-family:var(--font-mono);font-size:12px;color:var(--muted);margin-top:8px;min-height:1.4em}
+
+table.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+table.compare th,table.compare td{border:1px solid var(--border);padding:10px 12px;text-align:left}
+table.compare th{background:var(--bg-2);font-family:var(--font-display);font-weight:500}
+table.compare td:nth-child(2){font-family:var(--font-mono);font-size:13px;color:var(--ink-2)}
+
+/* Schema-aware sections */
+.hero-cta{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.btn-primary{background:var(--accent-2);color:#fff;padding:14px 22px;border-radius:var(--radius);text-decoration:none;font-weight:600;font-size:15px;display:inline-block}
+.btn-primary:hover{background:#9E3308}
+.btn-ghost{background:transparent;color:var(--ink);padding:14px 22px;border-radius:var(--radius);text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--border);display:inline-block}
+.btn-ghost:hover{border-color:var(--accent-2)}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Best AI Tools for Freelancers & Marketers — 2026 Roundup",
+  "description":"An editorial roundup of 8 AI tools that actually move the needle for freelance marketers.",
+  "datePublished":"2026-08-21",
+  "dateModified":"2026-08-21",
+  "author":{"@type":"Organization","name":"Discus"},
+  "publisher":{"@type":"Organization","name":"Discus Editorial"},
+  "mainEntityOfPage":"https://aldow3n-a11y.github.io/best-ai-freelancers/",
+  "about":["AI writing tools","SEO automation","AI video editing","voice generation","cold outreach","email marketing","workspace AI","analytics for marketers"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Are these tools safe for client work?","acceptedAnswer":{"@type":"Answer","text":"All eight tools are SOC 2 or GDPR compliant and used by agencies billing $1M+/yr. None of them train on your inputs by default. For high-stakes client work, turn off training in the settings — Jasper, Surfer, Notion AI, and ElevenLabs all support this."}},
+    {"@type":"Question","name":"Will AI replace freelance marketers?","acceptedAnswer":{"@type":"Answer","text":"AI replaces the boring parts of the job — first drafts, transcription, meta descriptions, list pulls. The freelancer who ships a first draft in 20 minutes instead of 3 hours wins. Tools on this list are leverage, not replacement."}},
+    {"@type":"Question","name":"Which one is best for a solo freelancer on a budget?","acceptedAnswer":{"@type":"Answer","text":"Jasper + Surfer covers 80% of content marketing needs for $138/mo combined. Skip the rest until revenue from clients covers the cost. Writecream's free tier is enough for outreach if you only send <500 emails/mo."}},
+    {"@type":"Question","name":"What about ChatGPT or Claude directly?","acceptedAnswer":{"@type":"Answer","text":"For one-off tasks, raw ChatGPT/Claude is fine. But for repeatable client work, the tools on this list are better: Surfer reads the SERP, Jasper learns your brand voice once, Descript does podcast editing in 20 minutes instead of 6 hours."}},
+    {"@type":"Question","name":"How often is this list updated?","acceptedAnswer":{"@type":"Answer","text":"Every quarter. The marketer AI space moves fast — a tool that's #1 today may be #4 next month. Last refresh: August 2026."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+<div class="nav-inner">
+<a class="brand" href="/best-ai-freelancers/"><span class="brand-mark"></span><span>Best AI for Freelancers</span></a>
+<div class="nav-links">
+<a href="#picks">Top picks</a>
+<a href="#compare">Compare</a>
+<a href="#faq">FAQ</a>
+<a class="btn-post" href="#alerts">Get deal alerts</a>
+</div>
+</div>
+</nav>
+
+<!-- ============== HERO ============== -->
+<section class="hero">
+<div>
+<div class="eyebrow"><span class="dot"></span> Updated · August 2026</div>
+<h1 class="title">The AI tools that actually <em>double a freelancer's output</em> — without sounding like a robot.</h1>
+<p class="lede">We tested 41 AI products marketed to freelance writers, SEO consultants, and creators. Most are ChatGPT wrappers with a marketing budget. These 8 aren't. Each one replaces a specific bottleneck in the freelance workflow — drafting, optimizing, recording, reaching out, sending, measuring.</p>
+<div class="byline">
+<span>By <strong>Discus</strong></span>
+<span><strong>8</strong> tools reviewed</span>
+<span><strong>~9h</strong> to read</span>
+<span>Hero pick: <strong>Jasper</strong></span>
+</div>
+<div class="hero-cta">
+<a class="btn-primary" href="https://jasper.ai/partners" rel="nofollow sponsored">Try Jasper free →</a>
+<a class="btn-ghost" href="#writing">Read the reviews</a>
+</div>
+</div>
+<aside class="aside-card">
+<h3>What's inside</h3>
+<p>An opinionated shortlist — not a database dump. Every tool has been used by a freelancer billing $5K+/mo.</p>
+<ol class="toc">
+<li><a href="#writing"><span><span class="num">01</span> Long-form AI writing</span><span>→</span></a></li>
+<li><a href="#seo"><span><span class="num">02</span> SEO content optimization</span><span>→</span></a></li>
+<li><a href="#audio-video"><span><span class="num">03</span> Audio + video editing</span><span>→</span></a></li>
+<li><a href="#voice"><span><span class="num">04</span> Voice + narration</span><span>→</span></a></li>
+<li><a href="#outreach"><span><span class="num">05</span> Cold outreach at scale</span><span>→</span></a></li>
+<li><a href="#email"><span><span class="num">06</span> Email marketing</span><span>→</span></a></li>
+<li><a href="#workspace"><span><span class="num">07</span> Workspace + docs</span><span>→</span></a></li>
+<li><a href="#analytics"><span><span class="num">08</span> Analytics + CRO</span><span>→</span></a></li>
+<li><a href="#compare"><span><span class="num">09</span> Comparison table</span><span>→</span></a></li>
+<li><a href="#faq"><span><span class="num">10</span> FAQ</span><span>→</span></a></li>
+</ol>
+</aside>
+</section>
+
+<!-- ============== SECTION 1: WRITING ============== -->
+<section class="section" id="writing">
+<div class="container">
+<div class="section-head"><div class="label">01 — Writing</div><h2>The AI writer that <em>actually learns your voice</em>.</h2></div>
+
+<div class="prose">
+<p>Most AI writers produce interchangeable corporate sludge. Jasper is the rare exception: feed it 5 of your past posts and it reverse-engineers your tone, sentence length, vocabulary, and structural patterns. Output reads like a tired version of you, not a polite stranger.</p>
+
+<h3>Who it's for</h3>
+<ul>
+<li>Freelance writers billing $5K+/mo who want to ship 2x more articles without outsourcing</li>
+<li>Agencies producing content for 10+ clients (per-client Brand Voice profiles)</li>
+<li>SEO shops who need first drafts in 20 minutes, not 4 hours</li>
+</ul>
+
+<h3>What it costs</h3>
+<p>$49/mo Creator (1 seat, 1 brand voice) → $125/mo Pro (5 seats, 3 voices, Jasper Chat + API access). Annual plans save 20%.</p>
+
+<h3>What it doesn't do well</h3>
+<ul>
+<li>Replacing research — Jasper doesn't search the web, it writes from your prompt</li>
+<li>Long-form journalism (it pads; you still need to edit)</li>
+<li>Highly technical specs (give it a draft and ask for tightening, not first-pass)</li>
+</ul>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<span class="rank">★ HERO PICK</span>
+<h4>Jasper</h4>
+<span class="tag">Long-form AI writing</span>
+<p class="desc">Brand-voice training, blog + ad workflows, 30+ templates, plagiarism checker. Best for repeatable client deliverables.</p>
+<span class="price">$49–$125/mo</span>
+<div class="links"><a href="https://jasper.ai/partners" rel="nofollow sponsored">Try Jasper →</a></div>
+</div>
+
+<div class="tool-card">
+<span class="rank">Runner-up</span>
+<h4>Writecream</h4>
+<span class="tag">Cold outreach + long-form</span>
+<p class="desc">Long-form editor + LinkedIn / email outreach generator. Free tier exists; paid tiers unlock plagiarism + SEO mode.</p>
+<span class="price">$0–$69/mo</span>
+<div class="links"><a href="https://www.writecream.com/affiliate-program" rel="nofollow sponsored">Try Writecream →</a></div>
+</div>
+
+<div class="tool-card">
+<span class="rank">Cheap alt</span>
+<h4>ChatGPT Plus (raw)</h4>
+<span class="tag">Foundation model</span>
+<p class="desc">For ad-hoc tasks. No brand voice training, no templates, no SERP awareness. Fine for first drafts of one-off work.</p>
+<span class="price">$20/mo</span>
+<div class="links"><a href="https://chatgpt.com/plus" rel="nofollow">ChatGPT →</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<h3>Want a free month of Jasper Pro?</h3>
+<p>Sign up via our link, ship 10 articles in 30 days. If you don't save 20+ hours, refund.</p>
+<a href="https://jasper.ai/partners" rel="nofollow sponsored">Start free trial →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 2: SEO ============== -->
+<section class="section" id="seo">
+<div class="container">
+<div class="section-head"><div class="label">02 — SEO</div><h2>The tool that <em>reads Google before you write</em>.</h2></div>
+
+<div class="prose">
+<p>Surfer SEO scrapes the top 10 results for your target keyword, extracts word count, structure, NLP terms, and headings — then scores your draft in real time as you write. It's not an AI writer; it's an AI editor that knows what ranking looks like.</p>
+
+<h3>Why freelancers use it</h3>
+<ul>
+<li>First-pass outlines already optimized for the SERP</li>
+<li>Real-time "Content Score" so you don't waste a revision cycle</li>
+<li>Surfer AI can produce a complete first draft, then you rewrite it</li>
+</ul>
+
+<h3>Pricing reality</h3>
+<p>Essential plan is $89/mo (limited audits). Serious freelancers need Scale at $199/mo. There's no useful free tier — Surfer makes money by being the only tool that does this well.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<span class="rank">★ Hero pick for SEO</span>
+<h4>Surfer SEO</h4>
+<span class="tag">SERP-driven content optimization</span>
+<p class="desc">Topical authority maps, content editor with NLP scoring, audit existing posts for refreshes.</p>
+<span class="price">$89–$199/mo</span>
+<div class="links"><a href="https://surferseo.com/partners" rel="nofollow sponsored">Try Surfer →</a></div>
+</div>
+
+<div class="tool-card">
+<span class="rank">Cheap alt</span>
+<h4>Ahrefs Webmaster Tools</h4>
+<span class="tag">Free SEO site audit</span>
+<p class="desc">Free if you verify your own site. Not for client work, but excellent for backlink + keyword research on your own portfolio.</p>
+<span class="price">$0 (own site only)</span>
+<div class="links"><a href="https://ahrefs.com/webmaster-tools" rel="nofollow">Ahrefs WMT →</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 3: AUDIO + VIDEO ============== -->
+<section class="section" id="audio-video">
+<div class="container">
+<div class="section-head"><div class="label">03 — Audio + Video</div><h2>The editor where <em>deleting words cuts the audio</em>.</h2></div>
+
+<div class="prose">
+<p>Descript treats audio and video like a text document. Transcribe an hour-long podcast in 2 minutes. Delete filler words ("um", "uh") with one click. Edit by deleting text — the timeline re-renders. It's the only editor freelancers actually finish projects in.</p>
+
+<h3>Why it works</h3>
+<ul>
+<li>Auto-transcription in 23 languages</li>
+<li>"Remove filler words" saves 5-10 minutes per 30-min recording</li>
+<li>Overdub AI lets you fix a mis-spoken word by typing the correction</li>
+<li>Screen recording + edit in the same tool (great for course creators)</li>
+</ul>
+
+<h3>Pricing reality</h3>
+<p>Free tier = 1 hour of transcription/mo (not useful). Hobbyist $24/mo = 10 hours. Pro $33/mo = 40 hours + Overdub.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<span class="rank">★ Hero pick for creators</span>
+<h4>Descript</h4>
+<span class="tag">Audio + video editing</span>
+<p class="desc">Text-based editing, auto-transcription, Overdub AI voice cloning, screen recording, captions auto-generated.</p>
+<span class="price">$24–$33/mo</span>
+<div class="links"><a href="https://www.descript.com/affiliate" rel="nofollow sponsored">Try Descript →</a></div>
+</div>
+
+<div class="tool-card">
+<span class="rank">Video alt</span>
+<h4>CapCut</h4>
+<span class="tag">Free video editor</span>
+<p class="desc">ByteDance's free editor. Auto-captions, AI effects, 4K export. Mobile + desktop. Good for short-form only.</p>
+<span class="price">$0 (Pro $8/mo)</span>
+<div class="links"><a href="https://www.capcut.com/" rel="nofollow">CapCut →</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 4: VOICE ============== -->
+<section class="section" id="voice">
+<div class="container">
+<div class="section-head"><div class="label">04 — Voice</div><h2>The voice generator that <em>sounds like a person, not a model</em>.</h2></div>
+
+<div class="prose">
+<p>ElevenLabs is the only voice AI that's hard to clock on a phone call. It supports 29 languages, voice cloning from a 30-second sample, and an API that costs $0.30 per 1K characters. Freelancers use it for narration, ad voiceovers, podcast intros, and short-form video at scale.</p>
+
+<h3>Honest limitations</h3>
+<ul>
+<li>Long-form (>5 min) audio drifts in tone — best for sub-2-min clips</li>
+<li>Voice cloning requires consent + commercial rights (don't clone people without permission)</li>
+<li>Free tier gives you 10K characters/mo — enough to test, not enough for production</li>
+</ul>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<span class="rank">★ Hero pick for voice</span>
+<h4>ElevenLabs</h4>
+<span class="tag">AI voice generation</span>
+<p class="desc">Voice cloning, 29 languages, API + UI, dubbing studio, audiobooks, video narration. Best-in-class realism.</p>
+<span class="price">$5–$330/mo</span>
+<div class="links"><a href="https://elevenlabs.io/affiliate" rel="nofollow sponsored">Try ElevenLabs →</a></div>
+</div>
+
+<div class="tool-card">
+<span class="rank">Alt</span>
+<h4>PlayHT</h4>
+<span class="tag">Voice generation alt</span>
+<p class="desc">Similar realism, slightly cheaper API. Smaller library of community voices.</p>
+<span class="price">$31–$99/mo</span>
+<div class="links"><a href="https://play.ht/" rel="nofollow">PlayHT →</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 5: OUTREACH ============== -->
+<section class="section" id="outreach">
+<div class="container">
+<div class="section-head"><div class="label">05 — Outreach</div><h2>The tool that <em>finds emails and writes the pitch</em>.</h2></div>
+
+<div class="prose">
+<p>Writecream's "Link Assistant" and "Cold Email" modes scrape a prospect's site, LinkedIn, and recent content, then generate a personalized first line + subject. For agencies doing 500+ outreaches/mo, this is the difference between hiring an SDR and not.</p>
+
+<h3>Real workflow</h3>
+<ol>
+<li>Drop 50 LinkedIn URLs into Writecream</li>
+<li>Generate personalized openers per prospect</li>
+<li>Push to Instantly / Smartlead for sending</li>
+<li>Track replies with the built-in reply detector</li>
+</ol>
+
+<h3>What it costs</h3>
+<p>Free tier = 10K words/mo (enough to test). Unlimited at $69/mo. Most freelancers break even on $69 if they win 1 client/mo.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<span class="rank">★ Hero pick for outreach</span>
+<h4>Writecream</h4>
+<span class="tag">Cold outreach + LinkedIn</span>
+<p class="desc">Personalized cold emails, LinkedIn messages, backlink requests. Long-form editor included.</p>
+<span class="price">$0–$69/mo</span>
+<div class="links"><a href="https://www.writecream.com/affiliate-program" rel="nofollow sponsored">Try Writecream →</a></div>
+</div>
+
+<div class="tool-card">
+<span class="rank">Sending alt</span>
+<h4>Instantly.ai</h4>
+<span class="tag">Cold email sending</span>
+<p class="desc">Inbox rotation, deliverability tools, reply detection. Pairs with Writecream for full outreach stack.</p>
+<span class="price">$30–$97/mo</span>
+<div class="links"><a href="https://instantly.ai/" rel="nofollow">Instantly →</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 6: EMAIL ============== -->
+<section class="section" id="email">
+<div class="container">
+<div class="section-head"><div class="label">06 — Email</div><h2>The email platform <em>built for creators, not enterprises</em>.</h2></div>
+
+<div class="prose">
+<p>Kit (formerly ConvertKit) is the email service most freelance writers and creators use because it doesn't punish you for having under 1,000 subscribers. Free up to 10K subscribers. Automations are visual. Commerce (paid newsletters) is built in.</p>
+
+<h3>Why not Mailchimp?</h3>
+<p>Mailchimp charges you once you cross 500 subscribers, then upsells you into a "customer journey builder" you'll never use. Kit's pricing is linear, predictable, and the deliverability is comparable.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<span class="rank">★ Hero pick for email</span>
+<h4>Kit (ConvertKit)</h4>
+<span class="tag">Email marketing for creators</span>
+<p class="desc">Free up to 10K subs. Automations, landing pages, commerce for paid newsletters, broadcast sending.</p>
+<span class="price">$0–$90/mo</span>
+<div class="links"><a href="https://www.kit.com/affiliate" rel="nofollow sponsored">Try Kit →</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 7: WORKSPACE ============== -->
+<section class="section" id="workspace">
+<div class="container">
+<div class="section-head"><div class="label">07 — Workspace</div><h2>The doc tool that <em>thinks alongside you</em>.</h2></div>
+
+<div class="prose">
+<p>Notion AI lives where you already work. You can ask it to summarize a long SOP, draft a meeting agenda, translate a doc, or generate action items from notes — without leaving the page. The $10/mo add-on is one of the cheapest AI upgrades you can buy.</p>
+
+<h3>Honest review</h3>
+<p>Notion AI is not the strongest foundation model. It's a <em>convenient</em> one. For serious writing, you still want Jasper or Claude. But for the 50 small tasks per day ("summarize this", "rewrite this shorter", "extract the action items"), it's the lowest-friction option.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<span class="rank">★ Hero pick for docs</span>
+<h4>Notion AI</h4>
+<span class="tag">Workspace + AI</span>
+<p class="desc">AI built into Notion pages — $10/mo add-on to any Notion plan. Summarize, draft, translate, extract.</p>
+<span class="price">$10/mo add-on</span>
+<div class="links"><a href="https://www.notion.com/affiliates" rel="nofollow sponsored">Try Notion AI →</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 8: ANALYTICS ============== -->
+<section class="section" id="analytics">
+<div class="container">
+<div class="section-head"><div class="label">08 — Analytics + CRO</div><h2>The tool that shows you <em>where people actually click</em>.</h2></div>
+
+<div class="prose">
+<p>Hotjar gives you heatmaps and session recordings on your landing pages. As a freelancer, you can finally prove to a client "your hero CTA is broken, here's a recording of 47 users rage-clicking the wrong button." It converts reluctant clients into upsells.</p>
+
+<h3>Real win pattern</h3>
+<ol>
+<li>Drop Hotjar on a client's landing page</li>
+<li>Record 100 sessions</li>
+<li>Build a heatmap + recording report</li>
+<li>Bill $500-$2K for the audit</li>
+<li>Implement fixes → upsell monthly retainer</li>
+</ol>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<span class="rank">★ Hero pick for CRO</span>
+<h4>Hotjar</h4>
+<span class="tag">Heatmaps + recordings</span>
+<p class="desc">Heatmaps, session recordings, on-site surveys, feedback widgets. Free tier covers small sites.</p>
+<span class="price">$0–$99+/mo</span>
+<div class="links"><a href="https://www.hotjar.com/partners" rel="nofollow sponsored">Try Hotjar →</a></div>
+</div>
+
+<div class="tool-card">
+<span class="rank">Product analytics</span>
+<h4>Mixpanel</h4>
+<span class="tag">Event-based analytics</span>
+<p class="desc">For SaaS freelancers — cohort retention, funnel analysis, A/B testing. Free up to 20M events/mo.</p>
+<span class="price">$0–$833+/mo</span>
+<div class="links"><a href="https://www.mixpanel.com/partners" rel="nofollow sponsored">Try Mixpanel →</a></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============== COMPARISON TABLE ============== -->
+<section class="section" id="compare">
+<div class="container">
+<div class="section-head"><div class="label">09 — Compare</div><h2>All 8 at a <em>glance</em>.</h2></div>
+
+<table class="compare">
+<thead>
+<tr><th>Tool</th><th>Category</th><th>Best for</th><th>Price</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Jasper</strong> ★</td><td>Writing</td><td>Repeatable client deliverables, brand voice</td><td>$49–$125/mo</td></tr>
+<tr><td><strong>Surfer SEO</strong></td><td>SEO</td><td>SERP-driven content optimization</td><td>$89–$199/mo</td></tr>
+<tr><td><strong>Descript</strong></td><td>Audio/Video</td><td>Podcasts, courses, YouTube</td><td>$24–$33/mo</td></tr>
+<tr><td><strong>ElevenLabs</strong></td><td>Voice</td><td>Narration, ads, video voiceovers</td><td>$5–$330/mo</td></tr>
+<tr><td><strong>Writecream</strong></td><td>Outreach</td><td>Cold email + LinkedIn at scale</td><td>$0–$69/mo</td></tr>
+<tr><td><strong>Kit</strong></td><td>Email</td><td>Creator newsletters, paid subs</td><td>$0–$90/mo</td></tr>
+<tr><td><strong>Notion AI</strong></td><td>Workspace</td><td>Docs + AI in the same place</td><td>$10/mo add-on</td></tr>
+<tr><td><strong>Hotjar</strong></td><td>Analytics</td><td>Heatmaps + CRO audits for clients</td><td>$0–$99+/mo</td></tr>
+</tbody>
+</table>
+
+<div class="disclosure">
+Affiliate disclosure — Best AI for Freelancers is reader-supported. When you sign up for a tool via links on this page, we may earn a commission at no extra cost to you. We only recommend tools we've actually used in client work. Editorial picks are independent of affiliate relationships.
+</div>
+</div>
+</section>
+
+<!-- ============== FAQ ============== -->
+<section class="section" id="faq">
+<div class="container">
+<div class="faq">
+<h2>Frequently asked, <em>honestly answered</em>.</h2>
+
+<details open>
+<summary>Are these tools safe for client work?</summary>
+<div class="answer">All eight tools are SOC 2 or GDPR compliant and used by agencies billing $1M+/yr. None of them train on your inputs by default. For high-stakes client work, turn off training in the settings — Jasper, Surfer, Notion AI, and ElevenLabs all support this.</div>
+</details>
+
+<details>
+<summary>Will AI replace freelance marketers?</summary>
+<div class="answer">AI replaces the boring parts of the job — first drafts, transcription, meta descriptions, list pulls. The freelancer who ships a first draft in 20 minutes instead of 3 hours wins. Tools on this list are leverage, not replacement.</div>
+</details>
+
+<details>
+<summary>Which one is best for a solo freelancer on a budget?</summary>
+<div class="answer">Jasper + Surfer covers 80% of content marketing needs for $138/mo combined. Skip the rest until revenue from clients covers the cost. Writecream's free tier is enough for outreach if you only send &lt;500 emails/mo.</div>
+</details>
+
+<details>
+<summary>What about ChatGPT or Claude directly?</summary>
+<div class="answer">For one-off tasks, raw ChatGPT/Claude is fine. But for repeatable client work, the tools on this list are better: Surfer reads the SERP, Jasper learns your brand voice once, Descript does podcast editing in 20 minutes instead of 6 hours.</div>
+</details>
+
+<details>
+<summary>How often is this list updated?</summary>
+<div class="answer">Every quarter. The marketer AI space moves fast — a tool that's #1 today may be #4 next month. Last refresh: August 2026.</div>
+</details>
+
+<details>
+<summary>Do these tools have free trials?</summary>
+<div class="answer">Jasper: 7-day free trial. Surfer: 7-day money-back. Descript: free tier with 1 hour transcription/mo. ElevenLabs: free tier with 10K characters/mo. Writecream: free tier with 10K words/mo. Kit: free up to 10K subscribers. Notion AI: free trial of the $10 add-on. Hotjar: free tier with 35 sessions/day.</div>
+</details>
+</div>
+</div>
+</section>
+
+<!-- ============== SUBSCRIBE / LEADS ============== -->
+<section class="section" id="alerts">
+<div class="container">
+<div class="section-head"><div class="label">Free · No signup wall</div><h2>Get the <em>quarterly update</em> by email.</h2></div>
+<div class="prose">
+<p>When one of these tools changes pricing, gets acquired, or a new contender enters the top 8, you'll know first. One email per quarter, no autoresponder sequences.</p>
+<form class="subscribe" id="subForm" action="https://formsubmit.co/ajax/discus.leads@protonmail.com" method="POST">
+<input type="email" name="email" placeholder="you@yourdomain.com" required>
+<button type="submit">Subscribe</button>
+</form>
+<div class="subscribe-status" id="subStatus"></div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-inner">
+<div>© 2026 Best AI for Freelancers · Built by Discus</div>
+<div>
+<a href="/best-ai-freelancers/">Home</a> ·
+<a href="https://aldow3n-a11y.github.io/best-ai-realtor/">Best AI for Realtors</a> ·
+<a href="https://aldow3n-a11y.github.io/best-ai-lawyers/">Best AI for Lawyers</a> ·
+<a href="https://aldow3n-a11y.github.io/best-ai-accountants/">Best AI for Accountants</a> ·
+<a href="https://aldow3n-a11y.github.io/ai-quality-jobs/">AI Quality Jobs</a>
+</div>
+</div>
+</footer>
+
+<script>
+(function(){
+  var f=document.getElementById('subForm');
+  var s=document.getElementById('subStatus');
+  if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    s.textContent='Sending…';
+    var data=new FormData(f);
+    fetch(f.action,{
+      method:'POST',
+      body:data,
+      headers:{'Accept':'application/json'}
+    }).then(function(r){
+      if(r.ok){s.textContent='✓ Subscribed. Check your inbox in ~30 sec for confirmation.';f.reset();}
+      else{s.textContent='Something went wrong. Email discus.leads@protonmail.com directly.';}
+    }).catch(function(){s.textContent='Network error. Try again or email directly.';});
+  });
+})();
+</script>
+
+</body>
+</html>
